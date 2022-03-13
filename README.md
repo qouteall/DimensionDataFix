@@ -14,7 +14,7 @@ This mod does two things:
 * Prevent the non-vanilla dimensions from being saved into `level.dat` file
 * When loading a world, prevent the custom dimension data from being fed into DFU and cause error
 
-Note: This mod changes vanilla behavior, but in a good way. In vanilla, once you installed a dimension datapack, then the dimension will be stored in `level.dat`. Even if you remove the datapack, that dimension cannot be removed. **In vanilla Minecraft 1.18.2, once you added a dimension via a datapack, that dimension will be permanently in the world even after uninstalling the datapack. You cannot remove that dimension without manually editing `level.dat` **. (Minecraft had warned you that it's an unsupported experimental setting. This custom dimension functionality is indeed experimental.) By installing this mod, the dimensions of the uninstalled datapacks will be removed (but their world files won't be deleted).
+Note: This mod changes vanilla behavior, but in a good way. In vanilla (1.18.2), once you installed a dimension datapack, then the dimension will be stored in `level.dat`. Even if you remove the datapack, that dimension won't be removed. You cannot remove the dimension without manually editing `level.dat`. (Minecraft had warned you that it's an unsupported experimental setting. This custom dimension functionality is indeed experimental.) By installing this mod, the dimensions of the uninstalled datapacks will be removed (but their world files won't be deleted).
 
 
 
