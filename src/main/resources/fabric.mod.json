@@ -1,29 +1,27 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "dimension_data_fix",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Dimension Data Fix",
+  "description": "",
   "authors": [
-    "Me!"
+    "qouteall"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
   },
 
-  "license": "CC0-1.0",
+  "license": "",
   "icon": "assets/modid/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "qouteall.dimension_data_fix.DimensionDataFix"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "dimension_data_fix.mixins.json"
   ],
 
   "depends": {
