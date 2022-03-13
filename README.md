@@ -1,5 +1,4 @@
-
-### Dimension Data Fix
+## Dimension Data Fix
 
 In MC 1.18.2, sometimes, after uninstalling a dimension datapack or a dimension mod, Minecraft cannot open the world:
 
@@ -7,7 +6,7 @@ In MC 1.18.2, sometimes, after uninstalling a dimension datapack or a dimension 
 
 And clicking "Safe Mode" will have no effect.
 
-This issue occurs when that datapack define its own WorldGen-related things (for example, noise settings).
+> This issue occurs when that datapack or mod define its own WorldGen-related things (for example, noise settings, chunk generators). If the datapack does not define its own WorldGen thing, Minecraft can load it. But most dimension datapacks and dimension mods define their own things.
 
 This mod will fix this issue.
 
@@ -15,7 +14,7 @@ This mod does two things:
 * Prevent the non-vanilla dimensions from being saved into `level.dat` file
 * When loading a world, prevent the custom dimension data from being fed into DFU and cause error
 
-Note: If you uninstalled a dimension datapack that does not define its own WorldGen-related things, then Minecraft will maybe successfully load the world but that datapack's dimension won't be removed. By installing this mod, the dimensions of the uninstalled datapacks will be removed.
+Note: This mod changes vanilla behavior, but in a good way. In vanilla, once you installed a dimension datapack, then the dimension will be stored in `level.dat`. Even if you remove the datapack, that dimension cannot be removed. **In vanilla Minecraft 1.18.2, once you added a dimension via a datapack, that dimension will be permanently in the world even after uninstalling the datapack. You cannot remove that dimension without manually editing `level.dat` **. (Minecraft had warned you that it's an unsupported experimental setting. This custom dimension functionality is indeed experimental.) By installing this mod, the dimensions of the uninstalled datapacks will be removed (but their world files won't be deleted).
 
 
 
