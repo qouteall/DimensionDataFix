@@ -4,15 +4,16 @@
   "version": "${version}",
 
   "name": "Dimension Data Fix",
-  "description": "",
+  "description": "Fix the issue of uninstalling dimension mods and dimension datapacks",
   "authors": [
     "qouteall"
   ],
   "contact": {
+    "sources": "https://github.com/qouteall/DimensionDataFix"
   },
 
-  "license": "",
-  "icon": "assets/modid/icon.png",
+  "license": "Apache License 2.0",
+  "icon": "assets/dimension_data_fix/icon.png",
 
   "environment": "*",
   "entrypoints": {
@@ -31,6 +32,6 @@
     "java": ">=17"
   },
   "suggests": {
-    "another-mod": "*"
+
   }
 }
