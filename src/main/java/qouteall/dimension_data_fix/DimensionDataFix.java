@@ -1,5 +1,7 @@
 package qouteall.dimension_data_fix;
 
+import com.mojang.datafixers.util.Unit;
+import com.mojang.serialization.DataResult;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.nbt.NbtCompound;
 import org.slf4j.Logger;
