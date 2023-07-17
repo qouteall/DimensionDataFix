@@ -4,7 +4,7 @@
   "version": "${version}",
 
   "name": "Dimension Data Fix",
-  "description": "Fix the issue of uninstalling dimension mods and dimension datapacks",
+  "description": "Fix the issue of upgrading worlds that have custom dimensions.",
   "authors": [
     "qouteall"
   ],
@@ -28,7 +28,7 @@
   "depends": {
     "fabricloader": ">=0.13.3",
     "fabric": "*",
-    "minecraft": "1.18.x",
+    "minecraft": "1.20.x",
     "java": ">=17"
   },
   "suggests": {

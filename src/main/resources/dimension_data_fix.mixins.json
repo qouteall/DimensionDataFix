@@ -4,7 +4,6 @@
   "package": "qouteall.dimension_data_fix.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "MixinLevelProperties",
     "MixinLevelStorage"
   ],
   "client": [
