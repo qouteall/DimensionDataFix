@@ -42,13 +42,16 @@ public class MixinLevelStorage {
         
         NbtCompound dimensions = value.getCompound("dimensions");
         
-        NbtCompound vanillaDimensions = new NbtCompound();
+        // including both vanilla dimensions and the dimensions that use vanilla generators (datapack dimensions)
+        NbtCompound vanillaGeneratorDimensions = new NbtCompound();
+        // the dimensions that use non-vanilla generators
         NbtCompound nonVanillaDimensions = new NbtCompound();
         
         for (String dimensionId : dimensions.getKeys()) {
-            NbtElement data = dimensions.get(dimensionId);
-            if (dimensionId.startsWith("minecraft:")) {
-                vanillaDimensions.put(dimensionId, data);
+            NbtCompound data = dimensions.getCompound(dimensionId);
+            String generatorType = data.getString("type");
+            if (generatorType.startsWith("minecraft:")) {
+                vanillaGeneratorDimensions.put(dimensionId, data);
             }
             else {
                 nonVanillaDimensions.put(dimensionId, data);
@@ -56,7 +59,7 @@ public class MixinLevelStorage {
         }
         
         NbtCompound newValue = value.copy();
-        newValue.put("dimensions", vanillaDimensions);
+        newValue.put("dimensions", vanillaGeneratorDimensions);
         
         Dynamic<T> dynamicOfVanillaDimensions = (Dynamic<T>) new Dynamic<>(ops, (T) newValue);
         
