@@ -8,6 +8,10 @@ With this mod, DFU will not swallow the nether and the end when upgrading if the
 
 Note: the nether and end dimensions recovered by the command will use the default vanilla world generation configuration. (If that world uses custom world type before, the recovered nether and end will use the vanilla default configuration. The world gen data in the broken world is already lost so this mod doesn't know. It's recommended to avoid having the world broken.)
 
+Note: this mod does not magically make dimension datapacks to work in higher minecraft versions without changing.
+
 
 Modrinth: https://modrinth.com/mod/dimension-data-fix 
 CurseForge: https://legacy.curseforge.com/minecraft/mc-mods/dimension-data-fix
+
+This mod is already a jar-in-jar in Immersive Portals mod.
