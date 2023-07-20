@@ -33,5 +33,15 @@
   },
   "suggests": {
 
+  },
+  "custom": {
+    "modmenu": {
+      "badges": [
+        "library"
+      ],
+      "links": {
+        "modmenu.discord": "https://discord.gg/BZxgURK"
+      }
+    }
   }
 }
