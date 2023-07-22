@@ -23,16 +23,17 @@ public class MixinTaggedChoiceType<K> implements TaggedChoiceTypeAccessor {
     private static final Logger LOGGER = LoggerFactory.getLogger("TaggedChoiceType_DimDataFix");
     
     @Shadow(remap = false) @Final protected Object2ObjectMap<K, Type<?>> types;
-    private Throwable test;
+    
+//    private Throwable test;
     
     private boolean failSoft;
     
-    @Inject(
-        method = "<init>", at = @At("RETURN"), remap = false
-    )
-    void onInitEnd(String name, Type keyType, Object2ObjectMap types, CallbackInfo ci) {
-        test = new Throwable();
-    }
+//    @Inject(
+//        method = "<init>", at = @At("RETURN"), remap = false
+//    )
+//    void onInitEnd(String name, Type keyType, Object2ObjectMap types, CallbackInfo ci) {
+//        test = new Throwable();
+//    }
     
     @Inject(
         method = "getCodec", at = @At("HEAD"), cancellable = true, remap = false
