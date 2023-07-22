@@ -28,7 +28,7 @@ import java.util.UUID;
 public class DimensionDataFix implements ModInitializer {
     public static final Logger LOGGER = LoggerFactory.getLogger("dimension_data_fix");
     
-    public static boolean enableUpgradeFix = true;
+    public static boolean enableUpgradeFix = false;
     
     public static boolean addNetherEndOnServerClose = false;
     

@@ -6,7 +6,10 @@
   "mixins": [
     "LevelStorageSessionAccessor",
     "MinecraftServerAccessor",
-    "MixinLevelStorage"
+    "MixinLevelStorage",
+    "MixinSchema2832",
+    "MixinTaggedChoice",
+    "MixinTaggedChoiceType"
   ],
   "client": [
   ],
